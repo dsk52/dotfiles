@@ -1,17 +1,27 @@
 [user]
 	name = Daisuke KONISHI
 	email = skydai1151@gmail.com
+
 [color]
 	diff = auto
 	status = auto
 	branch = auto
         ui = auto
+
 [color "status"]
 	added = green
 	changed = yellow
 	untracked = red
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+
 [fetch]
 	prune = true
+
 [core]
 	autocrlf = input
 	filemode = false
@@ -19,3 +29,6 @@
 
 [mergetool]
 	keepBackup = true
+
+[log]
+        date = short
