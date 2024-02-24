@@ -1,0 +1,21 @@
+[user]
+	name = Daisuke KONISHI
+	email = skydai1151@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+        ui = auto
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[fetch]
+	prune = true
+[core]
+	autocrlf = input
+	filemode = false
+	ignorecase = false
+
+[mergetool]
+	keepBackup = true
