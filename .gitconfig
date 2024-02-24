@@ -7,9 +7,9 @@
 	branch = auto
         ui = auto
 [color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
+	added = green
+	changed = yellow
+	untracked = red
 [fetch]
 	prune = true
 [core]
