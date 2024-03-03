@@ -10,3 +10,5 @@ rm -rf $HOME/.config/fish
 ln -sfnv $DIRNAME/.config/fish $HOME/.config/fish
 
 ln -sfnv $DIRNAME/.gitconfig $HOME/.gitconfig
+
+ln -sfnv $DIRNAME/.gacprc $HOME/.gacprc
