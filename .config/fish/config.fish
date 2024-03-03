@@ -11,3 +11,6 @@ source "$HOME/.config/fish/paths.fish"
 if type -q "direnv"
   direnv hook fish | source
 end
+
+set pure_color_primary (set_color "7bb6db")
+
