@@ -23,5 +23,4 @@ brew "nss"
 brew "openjdk"
 brew "re2c"
 brew "tree"
-cask "alfred"
 
