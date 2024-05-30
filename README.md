@@ -5,7 +5,11 @@
 brew bundle
 
 # make fish the new default
+## Linux
 chsh -s /usr/local/bin/fish
+## Mac
+sudo vi /etc/shells # /opt/homebrew/bin/fish を追加
+chsh -s /opt/homebrew/bin/fish
 
 # fish
 fish -c "curl -sL git.io/fisher | source && fisher update"
