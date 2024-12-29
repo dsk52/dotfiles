@@ -10,7 +10,7 @@ $ sh link.sh
 
 ```
 $ cd dotfiles
-$ sudo ln -sfnv ./wsl.conf /etc/
+$ sudo ln -sfnv ~/dotfiles/wsl.conf /etc/
 ```
 
 ## Mac only: install all brew dependencies
