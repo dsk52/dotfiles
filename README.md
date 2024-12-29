@@ -6,6 +6,13 @@
 $ sh link.sh
 ```
 
+## Windows only: copy wsl config file
+
+```
+$ cd dotfiles
+$ sudo ln -sfnv ./wsl.conf /etc/
+```
+
 ## Mac only: install all brew dependencies
 
 ```
