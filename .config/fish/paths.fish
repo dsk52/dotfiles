@@ -18,13 +18,19 @@ else if test (uname) = "Linux"
     set -gx PNPM_HOME "$HOME/.local/share/pnpm"
 end
 
-# Mac
+# pnpm for Mac
 if not string match -q -- $PNPM_HOME $PATH
     set -gx PATH "$PNPM_HOME" $PATH
 end
-# pnpm end
 
-if test -d ".local/share/mise"
-  $HOME/.local/bin/mise activate fish | source
+
+# mise
+if test (uname) = "Darwin"
+  if test -d "$HOME/Library/mise"
+    $HOME/.local/bin/mise activate fish | source
+  end
+else if test (uname) = "Linux"
+  if test -d "$HOME/.local/share/mise"
+    $HOME/.local/bin/mise activate fish | source
+  end
 end
-
