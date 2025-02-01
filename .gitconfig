@@ -32,3 +32,6 @@
 
 [log]
         date = short
+
+[init]
+	templatedir = ~/.git-template

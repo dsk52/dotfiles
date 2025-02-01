@@ -43,6 +43,18 @@ fish -c "curl -sL git.io/fisher | source && fisher update"
 npm i -g gacp aws-cdk
 ```
 
+## SecretLint 設定
+
+```
+mkdir -p ~/.git-template/hooks
+ln -s ~/dotfiles/.git-template/hooks/pre-commit ~/.git-template/hooks/pre-commit
+
+chmod +x ~/dotfiles/.git-template/hooks/pre-commit
+
+# 必要に応じて以下
+# git config --global init.templatedir ~/.git-template
+```
+
 ## ssh setup
 
 ```
