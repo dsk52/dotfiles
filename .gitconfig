@@ -26,6 +26,7 @@
 	autocrlf = input
 	filemode = false
 	ignorecase = false
+	excludesfile = ~/.gitexclude
 
 [mergetool]
 	keepBackup = true
