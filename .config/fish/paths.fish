@@ -24,3 +24,7 @@ if not string match -q -- $PNPM_HOME $PATH
 end
 # pnpm end
 
+if test -d ".local/share/mise"
+  $HOME/.local/bin/mise activate fish | source
+end
+
