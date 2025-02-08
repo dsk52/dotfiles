@@ -2,8 +2,10 @@ set -x PATH /bin $PATH
 set -x PATH /usr/local/bin $PATH
 set -x PATH /usr/local/opt/openssl/bin $PATH 
 
-if status is-interactive
-    eval (/opt/homebrew/bin/brew shellenv)
+if test (uname) = "Darwin"
+    if status is-interactive
+        eval (/opt/homebrew/bin/brew shellenv)
+    end
 end
 
 if test -d "$HOME/.volta"
