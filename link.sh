@@ -25,6 +25,7 @@ fi
 
 ln -sfnv $DIRNAME/.claude/CLAUDE.md $HOME/.claude/CLAUDE.md
 ln -sfnv $DIRNAME/.claude/setting.json $HOME/.claude/setting.json
+ln -sfnv $DIRNAME/.claude/commands $HOME/.claude/commands
 
 # mise
 ln -sfnv $DIRNAME/.config/mise/.default_npm_packages $HOME/.default_npm_packages
