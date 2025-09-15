@@ -20,7 +20,7 @@ assistant: "リファクタリング計画を作成しました。シニアエ�
 </commentary>
 </example>
 tools: Glob, Grep, Read, WebFetch, TodoWrite, WebSearch, BashOutput
-model: sonnet
+model: Opus
 color: cyan
 ---
 
