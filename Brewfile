@@ -1,4 +1,3 @@
-tap "homebrew/bundle"
 brew "jpeg-xl"
 brew "aom"
 brew "asdf"
