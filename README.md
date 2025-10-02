@@ -1,8 +1,17 @@
 # Dotfiles
 
-## copy config files
+## ssh setup
 
 ```
+# generate and add new SSH key
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+```
+
+## Setup
+
+```sh
+$ git clone git@github.com:dsk52/dotfiles.git
+
 $ sh link.sh
 ```
 
@@ -13,7 +22,13 @@ $ cd dotfiles
 $ sudo ln -sfnv ~/dotfiles/wsl.conf /etc/
 ```
 
-## Mac only: install all brew dependencies
+## Mac only: Homebrewのインストールとツール群のインストール
+
+Homebrewインストール
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 ```
 brew bundle
@@ -39,7 +54,7 @@ fish -c "curl -sL git.io/fisher | source && fisher update"
 # volta setup
 # url: https://docs.volta.sh/guide/getting-started
 
-# gacp: coventional commit
+# Note: gacp: coventional commit
 npm i -g gacp aws-cdk
 ```
 
@@ -53,11 +68,4 @@ chmod +x ~/dotfiles/.git-template/hooks/pre-commit
 
 # 必要に応じて以下
 # git config --global init.templatedir ~/.git-template
-```
-
-## ssh setup
-
-```
-# generate and add new SSH key
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 ```
