@@ -37,3 +37,8 @@
 [init]
 	templatedir = ~/.git-template
 	defaultBranch = main
+[pull]
+	ff = only
+[push]
+	autoSetupRemote = true
+	default = current
